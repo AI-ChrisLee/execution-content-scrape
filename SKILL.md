@@ -1,156 +1,104 @@
 ---
 name: the-winning-scrape
-description: Use this when the founder says "Run the Winning Scrape.", every week, to decide the video. It hunts what is winning with your buyers right now, ranks it against what each channel usually gets, and forks on one question: no idea yet, and it picks ONE winner and digs it out completely (transcript, thumbnail text, what the comments complained about); idea already in hand, and it dresses your idea in the title shapes that are winning. First run also sets your lane: the niche and the search vocabulary it reuses every week after.
+description: Use this when the founder says "Run the Winning Scrape.", every week, to decide the video. It hunts the last 60 to 90 days, ranks every candidate against what its own channel usually gets, then picks ONE winner and digs it out completely (transcript, thumbnail, comments); with an idea already in hand it dresses that idea in the title shapes that are winning. First run also sets the lane: the niche and the search vocabulary every later run reuses.
 ---
 
 # The Winning Scrape
 
-You are the weekly picker. One winner, followed closely, freshly hunted every week; that
-is what keeps it timely. You never invent an angle or a shape. Downstream: the Proven
-Package packages the video and the Money Driven Script writes it, both from the file you
-hand over.
+One purpose: pick this week's video off other people's numbers and dig it out. One
+output: `squad/week/YYYY-MM-DD-winner.md`, the file the Proven Package (c2) packages and
+the Money Driven Script (c3) writes from.
+
+Say this line once, in the first message of a fresh run:
+
+> This skill is a base. Once you have done it your way, tell your squad "update the skill to do it like this."
 
 Read `.claude/squad-roots.md` first, the per-repo instance file every member-run skill
-shares: founder name · brand words (the product word plus its banned synonyms) · accent
-color · lane · week · episodes · credibility-bank · face · thumb-cages · voice
-file · wpm (110 default) · data sources · tools (the research mode this repo has).
-Its values win over the `squad/` paths written below, which are worked examples. The
-Winning Offer writes this file at the end of its run; fill any field you learn here
-(the lane, above all) and never re-ask for one it already answers. A repo carrying the
-legacy `.claude/spine-roots.md` keeps working: read that as the fallback when no
+shares. Its values win over the `squad/` paths below, which are worked examples; the lane
+above all. Fill any field this run learns, and never re-ask one it answers. A repo
+carrying the legacy `.claude/spine-roots.md` keeps working: read that when no
 squad-roots.md exists.
 
-## The modes, and how they are called
+## What this never does
 
-| Mode | What the founder says | What runs |
-|---|---|---|
-| `pick` (the one mode) | "Run the Winning Scrape." | beats 1 to 7: this week's video, picked off other people's numbers and dug out |
+Never invents an angle, a shape or a number. Never sends, never posts, never uploads,
+never publishes, never schedules. Never describes a thumbnail it did not view, never
+fabricates a search it could not run, never presents a substitute as the real thing. Real
+numbers only: a row without a link does not exist, anything not recorded prints
+`not recorded`, and search snippets never count as verification. A declined permission is
+stated plainly in the output as a gap in the data, never silently worked around. A forced
+pick is worse than an honest miss.
 
-## The run map (where you run, where you STOP)
+## The first message
 
-The `pick` mode.
+Read `squad/business.md`, `squad/lane.md`, `squad/offer-research.md` and
+`squad/credibility-bank.md` first, and never ask what they answer. Then ask 2 things in
+one message:
 
-| Beat | Mode |
-|---|---|
-| 1 SAY | HUMAN INPUT: the questions; the first answer picks the branch |
-| 2 AGREE | **STOP · GATE: yes before the hunt** |
-| 3 HUNT | AUTO |
-| 4 RANK | AUTO |
-| 5 SEAM | AUTO |
-| 6 BRANCH | DIG: pick ONE winner, then **STOP · GATE: the founder fixes the pick** · DRESS: clone the shapes onto the founder's idea |
-| 7 HANDOVER | Produce the files, then **STOP · GATE: approval + the voice pass on titles** |
+1. Do you already have this week's video idea? Yes: paste it (DRESS). No: the numbers
+   pick one (DIG).
+2. Name 2 or 3 YouTube channels your buyers watch.
 
-Never pause the AUTO beats; batch small questions into the gates.
+Ask what you sell and who buys it only when `squad/business.md` is missing. Where
+`squad/offer-research.md` mined channel names, play those back and ask only whether to
+add or drop any; its quotes and its `## BUYER LANGUAGE` section count as pasted buyer
+language, its `## CHANNEL BASELINES` as numbers to re-verify.
 
-## 1 · SAY
+In the same message: ask for 3 to 5 real buyer replies, DMs or comments, because real
+buyer language outranks everything you find; say in one line that the run will ask to
+allow web search, page fetches, shell commands and one transcript tool install, each
+allowed once; and from week 2, put last week's published row and the latest `## Sundays`
+row of `squad/content-log.md` above question 1, with the shape it cloned, the layer it
+was recorded on (that episode's `00_PREP.md`) and how many times the founder's OWN usual
+views it did. No log file or no published row yet: skip it silently. A proven winner of
+your own outranks a fresh hunt, and a flop's repackage counts as an idea in hand.
 
-Ask, in one message:
+First run only (no `squad/lane.md` yet): name the lane too, the niche in one line plus
+the search vocabulary, after reading the offer document's SWITCHING ITCH and ANSWER lines
+and the research file's direction call. Its week-one attack weights the pick and rides
+into the winner file.
 
-1. **Do you already have this week's video idea?** Yes: paste it (DRESS branch). No: the
-   numbers will pick one (DIG branch).
-2. What do you sell, in one sentence?
-3. Who buys it?
-4. Name 2-3 YouTube channels your buyers probably watch. (Skip if unknown.)
+## The hunt
 
-Skip 2-3 when `squad/business.md` exists (the Winning Offer writes its offer document there). For 4,
-read the channels-mined section of `squad/offer-research.md` first when that file exists,
-play those names back, and ask only whether to add or drop any; ask cold only when the file
-is absent. Read the rest of that file too: its verbatim quotes and its `## BUYER LANGUAGE`
-section (the one standing record of real replies, DMs, and objections, which the Pipeline
-appends to) count as pasted buyer language, and its `## CHANNEL BASELINES` are the starting
-numbers HUNT re-verifies. Read `squad/credibility-bank.md` too when it exists: its receipts
-are the real figures DRESS can offer for the `[X]` slots. Weekly runs: read the last
-published row and the latest `## Sundays` row of `squad/content-log.md` (the roots file's
-`content log` row when it names one) and put both in front of the founder in this same
-message, before question 1, so the answer picks the branch off last week's result; a proven
-winner of your own outranks a fresh hunt, and a flop's repackage counts as an idea in hand
-(DRESS). No log file or no published row yet: skip it silently. If the founder has real
-buyer replies, comments, or DMs, ask for 3-5 pasted in; real buyer language outranks
-everything you find.
-
-**First run only** (no `squad/lane.md` yet): this run also sets THE LANE, the direction
-the channel fights in: the niche named plainly, and the search vocabulary (the 6+ queries
-that found winners). When `squad/business.md` and `squad/offer-research.md` exist, the
-niche was already decided once, so read those judgments before naming a lane: the offer
-document's SWITCHING ITCH and ANSWER lines, and the research file's direction call and
-empty seat. State the lane against them at the AGREE gate ("your offer document says X;
-this lane fights there" or "departs there, and here is why"). The answer's week-one
-attack weights the DIG pick and rides into the winner file. Save the lane; every later
-run reuses it, and it refreshes at season boundaries or when the seam shifts.
-
-## 2 · AGREE
-
-Play back the branch and the hunt plan with reasons. Tell the founder what the run will
-ask permission for, in kinds: web search, page fetches (one prompt per new domain),
-shell commands for the raw-page pulls, and the one-time transcript tool install used at
-HANDOVER (the install ladder HANDOVER defines). Say allow each once for the session and
-the AUTO beats run unbroken. Get a yes; the yes covers the
-install. A declined permission is stated plainly in the output as a gap in the data,
-never silently worked around.
-
-## 3 · HUNT
-
-Search at least 6 ways, last 60-90 days only. Later runs: the saved vocabulary from
-`squad/lane.md`. First run (no lane file yet): derive the 6+ queries from the SAY
-answers, seeded by the buyer channels from question 4; at least half must name the
-BUYER's problem in the buyer's words, not the service category. Question 4 skipped:
-HUNT first finds 2-3 candidate buyer channels itself and confirms them topically (the
-channel-identity rule) before deriving the queries. The queries that found
-winners get saved to `squad/lane.md` at HANDOVER.
+Search at least 6 ways, last 60-90 days only. Later runs use the vocabulary saved in
+`squad/lane.md`. First run: derive the 6 or more queries from the answers, seeded by the
+buyer channels, at least half naming the BUYER's problem in the buyer's words, not the
+service category. No channels given: find 2 or 3 buyer channels yourself and confirm them
+topically first.
 
 For every promising video: title, channel, subscribers, views, age, URL. Identify
-channels by searching and confirming, never by guessing a handle. A row without
-a link does not exist.
+channels by searching and confirming, never by guessing a handle.
 
 No API installed (the default fresh install): the zero-quota toolkit IS the primary path,
-run clean with no flag. The numbers live in JSON embedded in the raw HTML
-(`ytInitialData` / `ytInitialPlayerResponse`); a plain markdown fetch strips them, so
-raw curl is the method: curl the page, grep the field. A markdown-fetch miss is a
-tooling miss, never evidence the niche is thin. The toolkit, one line per datum:
+run clean with no flag. The numbers live in JSON embedded in the raw HTML (`ytInitialData`
+/ `ytInitialPlayerResponse`); a plain markdown fetch strips them, so raw curl is the
+method, curl the page and grep the field. A markdown-fetch miss is a tooling miss, never
+evidence the niche is thin.
 
-- Finding candidates: curl the results page
-  (`youtube.com/results?search_query=<the+query>`) and grep `videoRenderer` for video
-  ids, then date-verify each row on its watch page. Built-in web search is the
-  supplement, not the primary, since it cannot filter results by upload date and the
-  60-90 day window is the rule this beat runs on.
-- Channel identity: the oEmbed endpoint (`youtube.com/oembed?url=<video-url>&format=json`).
-- Channel id from a handle: curl the channel page, grep `"channelId":"UC` (one step;
-  oEmbed returns only the handle URL).
-- What a channel usually gets: the channel RSS feed by channel id
-  (`youtube.com/feeds/videos.xml?channel_id=UC...`), the last ~15 uploads with per-video
-  view counts. When `squad/offer-research.md` carries `## CHANNEL BASELINES`, start from
-  those medians and re-verify them; never recompute a channel cold that the Winning Offer
-  already measured.
+- Candidates: curl `youtube.com/results?search_query=<the+query>`, grep `videoRenderer`
+  for video ids, then date-verify each row on its watch page. Web search supplements it;
+  it cannot filter by upload date.
+- Channel identity: `youtube.com/oembed?url=<video-url>&format=json`.
+- Channel id from a handle: curl the channel page, grep `"channelId":"UC`.
+- What a channel usually gets: `youtube.com/feeds/videos.xml?channel_id=UC...`, the last
+  ~15 uploads with per-video view counts.
 - Views, date, duration on one video: curl the watch page, grep `viewCount`,
   `publishDate`, `lengthSeconds`.
-- Subscribers: curl the channel about page, grep `subscriberCountText`.
+- Subscribers: the channel about page, grep `subscriberCountText`.
 - Likes (the bought-reach test): the watch page again, grep `likeCount`.
-- Thumbnails: download the jpg (`i.ytimg.com/vi/<id>/hqdefault.jpg`) into
+- Thumbnails: download `i.ytimg.com/vi/<id>/hqdefault.jpg` into
   `squad/week/thumbs/<winner-date>/src/` (this run's date, the date the winner file
-  carries), then Read the local file. HANDOVER keeps the ranked survivors' jpgs and
-  deletes the rest. Never describe a thumbnail you did not view; the
-  honest fallback is a THUMBNAIL UNREACHABLE label, same law as the transcript and
-  comments rules.
-- The transcript: the approved tool from HANDOVER.
+  carries), then Read the local file.
+- The transcript: `yt-dlp`, installed once at the winner file.
 
 Empty greps on EVERY page mean a consent or bot wall (common outside North America),
 never a thin niche: retry with a `CONSENT=YES+1` cookie header, and say so plainly if it
-persists. Search snippets never count as verification. A wired scraping tool (Apify,
-where set up) may speed the fan-out; keyless stays the default and the run never needs
-it. The Quota-dies flag is only for an API that failed mid-run.
+persists. Apify, where it is already set up, may speed the fan-out; keyless stays the
+default and the run never needs it.
 
-## 4 · RANK
+## The ranking
 
-**The loop line first, before anything is ranked.** Read the founder's own last published
-row in `squad/content-log.md`, resolve their channel from that row's video id (oEmbed), and
-print ONE line: the last pick, the shape it cloned (matched against `squad/lane.md`'s SHAPE
-TEMPLATES), the layer it was recorded on (the first line of that episode's `00_PREP.md`),
-and how many times the founder's OWN usual views it did, under the laws below. Anything not
-recorded prints `not recorded`, never a guess. That line is the whole of "gets better every
-week" in this lane: last week's result on screen at the moment this week's pick gets made.
-No log file, or no published row yet: say so in one line and move on.
-
-Two numbers; the first rules:
+2 numbers; the first rules:
 
     breakout = views divided by that channel's usual views
     (usual views = the median of that channel's last 10-20 comparable long-form uploads)
@@ -160,222 +108,166 @@ Two numbers; the first rules:
 To the founder a breakout is said as "N times what that channel usually gets", in those
 words.
 
-**The usual-views laws, stated once here.** Long-form means over 4 minutes. A one-minute
-vertical upload YouTube does not call a Short still drags a median far enough down to turn
-a loser into next week's winner: on the author's own channel the unfiltered median reads
-1,007.5 against a true 2,207.5, so every breakout comes back 2.19x too high.
+Long-form means over 4 minutes. A one-minute vertical upload YouTube does not call a
+Short still drags a median far enough down to turn a loser into next week's winner: on
+the author's own channel the unfiltered median reads 1,007.5 against a true 2,207.5. So
+on **the founder's OWN channel, verify every upload's real duration on the watch page**,
+once per run, before anything is ranked; it is the number every breakout divides by.
+Never trust an `is_short` field where an API is installed: it reads false for a one-minute
+vertical upload and true for a zero-second live stream. **A competitor's channel keeps the
+priced rule**: no duration filter, the median marked approximate, real durations verified
+only for the top 3 candidates' channels.
 
-- **The founder's OWN channel: verify every upload's real duration on the watch page.**
-  Once per run, at the loop line. One channel, about fifteen requests, and it is the number
-  every breakout divides by. Wherever an API is installed in this run, never trust an
-  `is_short` field; read the duration. That field returns false for one-minute vertical
-  uploads and true for a zero-second live stream.
-- **A competitor's channel keeps the priced rule**: no duration filter, the median marked
-  approximate, real durations verified only for the top 3 candidates' channels. The RSS
-  feed carries no durations at all, and fifteen extra requests per channel is not worth
-  spending on a row nobody will pick.
-- **The 2026-08-24 seam: refuse, do not label.** On 2026-08-24 YouTube began counting a
-  view from the first frame, so a window straddling that date mixes two definitions of the
-  word. Print `no usual number, window straddles 2026-08-24` and rank that channel on views
-  per subscriber, marked as the weaker read. A caveat printed next to a number does not stop a founder
-  copying an inflated winner, and the pick is the one thing this skill protects.
-- **Under 8 comparable long-form uploads there is no usual number.** Print `no usual
-  number, N uploads` and rank on views per subscriber, marked as the weaker read. Same rule for a thin
-  competitor channel and for the founder's own.
+**No usual number: refuse it, do not label it.** Print the string, rank that channel on
+views per subscriber marked as the weaker read. Window straddling 2026-08-24, the day
+YouTube began counting a view from the first frame, so the word means 2 things:
+`no usual number, window straddles 2026-08-24`. Under 8 comparable long-form uploads:
+`no usual number, N uploads`. Stats unpullable, zeroed counts or a broken uploads list:
+`no usual number`.
 
-Discard below 0.5x. Discard bought reach: a spike with almost no likes or comments
-relative to its views, or a video running as an ad, is not a winner; drop it and say
-why. Keep the top 8-12, sizes noted, links attached.
+Discard below 0.5x, and discard bought reach: a spike with almost no likes or comments
+relative to its views, or a video running as an ad, is not a winner; drop it and say why.
+Keep the top 8 to 12, sizes noted, links attached.
 
-The widen ladder, stated once, here: 0.5x is the discard floor. Nothing clears 1x = no
-winner yet; say so and widen one notch, the run's single widen. **A notch is one step up
-the specificity ladder**: the buyer's wider job, or the parent category of the problem, in
-the buyer's own words, same 60-90 day window, same vocabulary discipline. Never a jump to
-a different market. Worked example: bookkeeping for dental practices widens to running a
-dental practice's money (overhead, collections, payroll: the same buyer's wider job), not
-to bookkeeping for small businesses (a different buyer) and not to a six-month window.
-Still under 1x after the widen: carry the best row forward flagged as a CONTENT FIT pick
-running under what its channel usually gets, and the founder decides at the DIG gate
-with the number in view.
-Nothing clears 0.5x after the widen: reframe with the catch-surface note in
-`squad/lane.md` (the thin-after-one-widen edge rule), never widen again. A forced pick is
-worse than an honest miss.
+Nothing clears 1x = no winner yet: say so and widen one notch, the single widen this run
+gets. A notch is one step up the specificity ladder, the buyer's wider job or the parent
+category of the problem, in the buyer's own words, same 60-90 day window, same vocabulary
+discipline, never a jump to a different market (bookkeeping for dental practices widens
+to running a dental practice's money, not to bookkeeping for small businesses). Still
+under 1x: carry the best row forward flagged as a CONTENT FIT pick running under what its
+channel usually gets, and the founder decides with the number in view. Nothing clears
+0.5x: reframe on the catch surface, never widen again.
 
-Then write the checkpoint: the ranked candidate table (numbers, links, each channel's usual views) to
-`squad/week/YYYY-MM-DD-hunt.md`. A session resumed after a crash, a usage cap, or a
-/clear reads today's hunt file and re-enters at SEAM instead of re-hunting; HANDOVER
-folds it into the winner file.
+Then write the ranked candidate table (numbers, links, each channel's usual views) to
+`squad/week/YYYY-MM-DD-hunt.md`. A session resumed after a crash, a usage cap or a /clear
+reads today's hunt file and re-enters at the shape instead of re-hunting.
 
-## 5 · SEAM
+## The shape
 
-Name what repeats across survivors: topic angle, title shape, promise. Three 2x videos
-with one shape beat one lucky 10x. Write each winning title shape as a template with
-slots, next to the linked video that proved it and that video's RANK numbers: how many
-times its channel's usual views it did, the usual number it was measured against, and
-today's date as the date measured. The Package ranks shapes on those written numbers instead of recomputing them.
+Name what repeats across the survivors: topic angle, title shape, promise. 3 videos at 2x
+sharing one shape beat 1 lucky 10x. Write each winning title shape as a skeleton with
+slots, next to the linked video that proved it, the niche it proved in, how many times
+its channel's usual views it did, the usual number it was measured against, and today's
+date as the date measured. The Proven Package ranks shapes on those written numbers
+instead of recomputing them.
 
-## 6 · THE BRANCH
+## The pick, or the dress
 
-**DIG (no idea):** pick ONE winner, the best intersection of breakout, seam, and the
-founder's business. Weekly runs: before presenting, re-verify the lane's NEXT IN LINE
-rows against fresh numbers; a surviving row competes as a candidate. Present: the pick,
-the 3-5 runner-ups (one line each), and why. The runner-ups feed NEXT IN LINE.
-STOP: the founder fixes the pick before anything gets built on it.
+**DIG (no idea).** Pick ONE winner, the best intersection of breakout, shape and the
+founder's business. Present the pick, the 3 to 5 runner-ups one line each and why, plus
+the top 8 to 12 as a table with a number and a link on every row.
+Then stop: the founder takes the pick, or names the runner-up they want and why, in plain
+words. The runner-ups feed NEXT IN LINE.
 
-**DRESS (idea in hand):** the founder's idea gets 2-3 title candidates, every one a
-strict clone of a top shape from step 5, labeled with the shape and linked to the winner
-it clones. One variable changed per title. Number slots stay `[X]` until the founder
-supplies real figures; never invent one, though when `squad/credibility-bank.md` exists
-you may offer its receipts for the slots, the founder confirming each at the gate. Also
-name the closest winner to the idea; its winner file still gets built (the Package and
-the Money Driven Script need source material either way).
+**DRESS (idea in hand).** No pick gate. The idea gets 2 or 3 title candidates, each a
+strict clone of a top shape, labeled with the shape and linked to the winner it clones,
+one variable changed per title. Number slots stay `[X]` until the founder supplies real
+figures; never invent one, though `squad/credibility-bank.md` receipts may be offered for
+the slots, the founder confirming each. Name the closest winner to the idea; its winner
+file still gets built.
 
-## 7 · HANDOVER: the winner file
+## The winner file
 
-Build ONE file, `squad/week/YYYY-MM-DD-winner.md`:
+Build ONE file, `squad/week/YYYY-MM-DD-winner.md`, 5 parts in this order:
 
-- The winner: title, channel, numbers, URL (DRESS: plus the chosen title candidates).
-- **The transcript**, pulled in full. The working pull is a one-time transcript tool
-  install (e.g. `yt-dlp`), run on the okay batched into the AGREE gate; the watch page
-  alone returns no captions on a fresh keyless install. The install ladder, stated once
-  and referenced from AGREE: brew, else pip3 or pipx, else the standalone binary curled
-  into the repo root; on Windows, skip straight to the standalone `yt-dlp.exe`. The binary
-  lives in the repo root on every OS.
-- **The thumbnail, described**: exactly what text it carries and what it shows, from the
-  downloaded file the run actually Read (the toolkit's download-then-Read step), never
-  from the title or the numbers. Download failed = the THUMBNAIL UNREACHABLE label,
-  never a guess.
-- **The comments, mined**: top questions, complaints, and "you never showed X" moments,
-  verbatim with like counts. The pull rides the same approved tool, no second approval
-  needed, capped to the top ~100 by likes; uncapped, a popular winner pulls for silent
-  minutes and reads as a broken run. The exact command, so every session behaves the
-  same: `yt-dlp --write-comments --extractor-args
-  "youtube:comment_sort=top;max_comments=100,all" <url>`. What the winner's audience
-  wanted and did not get is our angle's sharpest edge.
-- **The angle**: what we add or fix, two sentences. When the offer document named a week-one
-  attack, its line goes here too; the Package and the Money Driven Script read this file, not
-  the offer document.
+1. **The winner**: title, channel, numbers, URL (DRESS: plus the chosen title
+   candidates).
+2. **The transcript**, pulled in full. Install the tool once here, on the allow the first
+   message named: brew, else pip3 or pipx, else the standalone binary curled into the
+   repo root; on Windows, straight to `yt-dlp.exe`. The binary lives in the repo root on
+   every OS. The watch page alone returns no captions on a fresh keyless install.
+3. **The thumbnail, described**: exactly what text it carries and what it shows, from the
+   downloaded file the run actually Read, never from the title or the numbers. Download
+   failed = the THUMBNAIL UNREACHABLE label, never a guess.
+4. **The comments**: top questions, complaints and "you never showed X" moments, verbatim
+   with like counts, capped to the top 100 by likes. Uncapped, a popular winner pulls for
+   silent minutes and reads as a broken run. The exact command, so every session behaves
+   the same: `yt-dlp --write-comments --extractor-args
+   "youtube:comment_sort=top;max_comments=100,all" <url>`
+5. **The angle**: what we add or fix, 2 sentences, at the bottom of the file. The offer
+   document's week-one attack line goes here too; c2 and c3 read this file, not the offer
+   document.
 
 Fold today's hunt checkpoint (`squad/week/YYYY-MM-DD-hunt.md`) into the winner file and
-remove it; the checkpoint's job ends here. The candidate thumbnails in
-`squad/week/thumbs/<winner-date>/src/` outlive the run: keep the top 8-12 ranked
-survivors' jpgs, the winner's among them, and delete only the unranked rest. Those
-survivor jpgs are the Proven Package's cage-distillation input, the pictures it distills
-this lane's own thumbnail cages from when none of its shipped cages was proven in this
-niche. Say in the winner file how many survivor jpgs the folder holds.
+remove it. Keep the top 8 to 12 ranked survivors' jpgs in
+`squad/week/thumbs/<winner-date>/src/`, the winner's among them, delete only the unranked
+rest, and say in the winner file how many survivor jpgs the folder holds; those jpgs are
+what the Proven Package distills this lane's thumbnail cages from. First run: write
+`squad/lane.md` too.
 
-First run: also write `squad/lane.md` here (the template below), from the vocabulary
-that actually hunted and the shapes step 5 proved, with this week's runner-ups in its
-NEXT IN LINE section, numbers and links attached, counted the way the template defines.
+One gate, the last thing in the run: the founder changes any word in a title that does
+not sound like them, then says yes. Close in one line: c2 packages this file, c3 writes
+from it.
 
-STOP: approval plus the voice pass on any title: the founder changes any word in a title
-that does not sound like them. Then close, word for word,
-branch-marked: DIG closes "Picked and dug. Packaging it is the Package's job, writing it
-is the Money Driven Script's, making it is the system's. This skill stops here." DRESS closes
-the same, opening "Dressed and dug." instead.
+## The outputs
 
-## The outputs (two files, plus the survivor thumbnails)
+`squad/week/YYYY-MM-DD-winner.md` every run, and `squad/lane.md` on the first run.
+Nothing else gets written, past the hunt checkpoint this run folds in and removes and the
+survivor jpgs it keeps. The lane file holds still between runs and refreshes at a season
+boundary or when the shape shifts; the Proven Package appends its own rows under a
+`## Your own winners` heading in the same file. The template:
 
-1. `squad/lane.md`: first run creates it; it holds still between runs and refreshes at
-   season boundaries or when the seam shifts. Its template:
+    # THE LANE
+    <the niche, one line>
 
-       # THE LANE
-       <the niche, one line>
+    ## SEARCH VOCABULARY
+    <the 6+ queries that found winners>
 
-       ## SEARCH VOCABULARY
-       <the 6+ queries that found winners>
+    ## SHAPE TEMPLATES
+    <one block per shape: the full skeleton text with slots, the niche that proved it,
+    the link to the proving video, how many times its channel's usual views it did, the
+    usual number it was measured against, and the date measured (worked example: 4.1x
+    the channel's usual 38,000 views, measured 2026-08-26). A multiple with no skeleton
+    is not a shape.>
 
-       ## SHAPE TEMPLATES
-       <one block per shape: the full skeleton text with slots, the niche that
-       proved it, the link to the proving video, how many times its channel's
-       usual views it did, the usual number it was measured against, and the date
-       measured (worked example: 4.1x the channel's usual 38,000 views, measured
-       2026-08-26). The Proven Package ranks shapes on that written number; a shape
-       carrying none makes it recompute the number this beat already had.>
+    ## NEXT IN LINE
+    <the 3-5 runner-ups behind this week's winner (both branches), one line each with
+    numbers and links; 5 rows maximum, the winner not among them; refreshed when the
+    shape shifts. Weekly runs always re-hunt fresh: this section is the tiebreaker and
+    the fallback when the fresh hunt is thin, never a substitute for hunting.>
 
-       ## NEXT IN LINE
-       <the 3-5 runner-ups behind this week's winner (both branches), one line each
-       with numbers and links; five rows maximum, the winner not among them; written at
-       HANDOVER, refreshed when the seam shifts. Weekly runs always re-hunt fresh:
-       this section is the tiebreaker and the fallback when the fresh hunt is thin,
-       never a substitute for hunting.>
+## Edge rules
 
-2. `squad/week/YYYY-MM-DD-winner.md`: the winner file, every `pick` run. The handoff
-   to the Proven Package and the Money Driven Script.
-
-Nothing else gets written. The RANK checkpoint (`squad/week/YYYY-MM-DD-hunt.md`) is working state, not an output;
-HANDOVER folds it into the winner file and removes it. The candidate thumbnails HUNT
-downloads are not working state: the top 8-12 ranked survivors' jpgs stay in
-`squad/week/thumbs/<winner-date>/src/` (the folder the Proven Package already owns) as
-that skill's cage-distillation input, and HANDOVER deletes only the unranked rest.
-
-## Edge rules (learned in testing, nine niches)
-
-- **Quota dies** (an installed API failed mid-run; a fresh keyless install is NOT this
-  state): fall back to plain web search plus the zero-quota toolkit defined in HUNT.
-  Flag it; never fabricate a search you could not run. When even per-item lookups die,
-  proceed on CONTENT FIT for outline-stage work only, mark RANK incomplete in every
-  file this run writes, and re-verify the numbers before any title locks.
-- **What the usual number excludes**: compute the median EXCLUDING the candidate video itself and
-  any confirmed bought-reach spikes. Mixed-topic or mixed-format channels: median over
-  comparable uploads only (long-form with long-form, same topic). Shorts are
-  identifiable with one keyless test: fetching `youtube.com/shorts/<id>` returns the
-  short directly and redirects to `/watch` for long-form. The duration floor, the seam
-  refusal and the 8-upload minimum are RANK's usual-views laws; RANK states them once and this
-  list does not restate them.
-- The uploads behind the usual number may be older than 90 days; only the WINNER pick
-  must be recent.
-- **Channel stats unpullable** (zeroed counts, broken uploads list): keep the row's
-  verifiable parts, print `no usual number` for it, rank on views per subscriber, marked
-  as the weaker read.
-- **Shorts never get ranked.** Shorts are cuts OF the long-form made later, not the
-  hunt's input, and their natural low engagement breaks the bought-reach test.
-  Hunt and rank long-form only.
+- **What the usual number excludes**: the candidate video itself, confirmed bought-reach
+  spikes, and anything not comparable (long-form with long-form, same topic). Those
+  uploads may be older than 90 days; only the WINNER pick must be recent.
+- **Shorts never get ranked**, being cuts OF the long-form made later, and their low
+  engagement breaks the bought-reach test. Keyless test: `youtube.com/shorts/<id>`
+  returns the short directly and redirects to `/watch` for long-form.
 - **Channel identity needs a topical check**: read a sample of actual content, not just
-  the name (a right-named channel can belong to a different industry).
-- **Comment-poor winner** (quiet B2B niches): report every comment verbatim, state the
-  shortfall as a finding, and optionally add the nearest real on-topic thread clearly
-  labeled as off-winner evidence. Near-zero comments is data, not failure.
-- **Comments UNREACHABLE** (the `--write-comments` pull failed; tooling, not scarcity):
-  say so, record the visible total count if any surface shows it, substitute the
-  transcript's sharpest lines clearly
-  labeled as transcript-not-comments, and mark the section for a re-pull before the
-  Package finalizes. Never present the substitution as mined comments.
-- **Transcript UNREACHABLE** (the tool fails, or the video carries no captions): state
-  the failure, substitute the video's description plus its on-screen text clearly
-  labeled as description-not-transcript, and mark the section for a re-pull before the
-  Package finalizes. Never present the substitution as the transcript.
-- **Non-English winner**: the transcript still gets pulled in full, plus a condensed
-  English pass for the handoff; say which parts are translation.
-- **DRESS collisions**: if the closest winner by mechanism and the best-mineable winner
-  diverge, the winner file follows the video whose SHAPE the chosen title clones; note
-  the other. If the founder's own idea turns out to be a dead shape in the data, that
-  finding goes to the gate, said plainly; the run map does not fork for it. And when the
-  winner's lever is not the founder's to borrow (a famous brand, a huge claim), clone
-  the shape's DNA, the transferable ingredient (a real, specific, high-stakes number),
-  never the untransferable lever.
-- **Thin after one widen**: say so plainly, then reframe instead of retreating. YouTube
-  stays the anchor and the archive (the recording's home, where buyers search, the
-  system's input); a thin YouTube niche means your buyer gets caught on LinkedIn posts
-  and community rooms instead. Record that in `squad/lane.md`. The system does not
-  change; the catch surface does. Never widen again.
-- **A thin niche produces a thin file that says so.** Density is the market's property,
-  not the skill's promise; a plainly-stated thin read at full rigor is a PASS.
-- **Season refresh**: at a season boundary the founder says so. The full first-run hunt
-  reruns on fresh data, `squad/lane.md` is rewritten, and NEXT IN LINE is re-picked.
-  Between seasons the lane holds still.
+  the name. A right-named channel can belong to a different industry.
+- **Unreachable, never substituted silently.** No transcript (the tool failed, or no
+  captions): the description plus its on-screen text, labeled description-not-transcript.
+  No comments (the `--write-comments` pull failed; tooling, not scarcity): the visible
+  total count if a surface shows it, plus the transcript's sharpest lines, labeled
+  transcript-not-comments. No thumbnail: the THUMBNAIL UNREACHABLE label. Say the
+  failure, and mark every substitution for a re-pull before the Package finalizes.
+- **Comment-poor winner** (quiet B2B niches): every comment verbatim, the shortfall
+  stated as a finding. Near-zero comments is data, not failure.
+- **Non-English winner**: the full transcript plus a condensed English pass, saying which
+  parts are translation.
+- **DRESS collisions**: the winner file follows the video whose SHAPE the chosen title
+  clones, the other noted. An idea that is a dead shape in the data is said plainly at
+  the gate.
+- **Thin after one widen**: say so plainly, then reframe. YouTube stays the anchor and the
+  archive (the recording's home, where buyers search, the system's input); a thin YouTube
+  niche means your buyer gets caught on LinkedIn posts and community rooms instead.
+  Record that in `squad/lane.md`. The system does not change; the catch surface does.
+- **Quota dies** (an installed API failed mid-run; a fresh keyless install is NOT this
+  state): fall back to web search plus the toolkit above, and flag it. When per-item
+  lookups die too, proceed on CONTENT FIT for outline-stage work only, mark the ranking
+  incomplete in every file this run writes, and re-verify before any title locks.
+- **Season refresh**: the founder says so at a season boundary. The first-run hunt reruns
+  on fresh data, `squad/lane.md` is rewritten, NEXT IN LINE re-picked. Between seasons
+  the lane holds still.
 
 ## Rules
 
-- Every message to the founder is scannable: a short header, then bullets or a
-  table. The ranked candidates, the shape templates, and the run map go in TABLES;
-  findings go in short bullets with the key number in bold. Never a wall of paragraphs.
-  The founder reads while deciding, not studying.
-- Real numbers only; unverifiable rows get dropped. Every row carries its URL.
+- Every message to the founder is scannable: a short header, then bullets or a table. The
+  ranked candidates and the shape templates go in TABLES; findings go in short bullets
+  with the key number in bold. Never a wall of paragraphs.
+- Unverifiable rows get dropped. Every row carries its URL.
 - Buyer language wins ties: an angle answering a real pasted reply beats a higher
   breakout that answers none.
 - Clone the shape, never the words. The one-variable swap IS the difference.
-- The one widen runs on RANK's ladder; RANK states it once, including what one notch
-  is, and this list does not restate it.
-- Weekly. The lane file holds still between runs and refreshes at season boundaries or
-  when the seam shifts; the hunt is always fresh.
+- Weekly, and the hunt is always fresh.

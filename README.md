@@ -1,10 +1,11 @@
 # The Winning Scrape
 
-Decides your next video off what is already winning with your buyers. It hunts the last
-60 to 90 days, ranks every video against what its own channel usually gets, picks one
-winner and digs it out: the transcript, the thumbnail text, what the comments asked for
-and never got. With an idea already in hand, it dresses your idea in the title shapes
-that are winning.
+This skill is a base. Once you have done it your way, tell your squad "update the skill to do it like this."
+
+Decides your next video off what is already winning with your buyers. It hunts the last 60
+to 90 days, ranks every video against what its own channel usually gets, picks one winner
+and digs it out: transcript, thumbnail, comments. With an idea in hand, it dresses that
+idea in the shapes that are winning.
 
 ## Install
 
@@ -16,9 +17,9 @@ Say this to Claude Code, in the folder your squad lives in:
 
     Run the Winning Scrape.
 
-It asks a few questions (do you already have this week's idea; which channels your
-buyers watch), asks for one yes before the hunt, then comes back with the pick and the
-runner-ups. You fix the pick or swap it, change any word in a title that is not yours,
-and it writes `squad/week/<date>-winner.md` (and `squad/lane.md` on the first run).
+It asks 2 things: do you already have this week's idea, and which channels your buyers
+watch. Back comes the pick, the runner-ups and a table of the top 8 to 12. You take the
+pick or name the runner-up you want, change any word in a title that is not yours, and it
+writes `squad/week/YYYY-MM-DD-winner.md` (and `squad/lane.md` on the first run).
 
 The full procedure is `SKILL.md`. Stuck? Reply to the email that sent you here.
