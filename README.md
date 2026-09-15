@@ -1,6 +1,6 @@
 # The Winning Scrape
 
-This skill is a base. Once you have done it your way, tell your squad "update the skill to do it like this."
+This agent is a base. Once you have done it your way, tell your squad "update the agent to do it like this."
 
 Decides your next video off what is already winning with your buyers. It hunts the last 60
 to 90 days, ranks every video against what its own channel usually gets, picks one winner
@@ -10,7 +10,7 @@ and digs it out: transcript, thumbnail, comments.
 
 Say this to Claude Code, in the folder your squad lives in:
 
-    Install this skill: https://github.com/AI-ChrisLee/the-winning-scrape. Clone the whole folder into .claude/skills as the-winning-scrape, without the .git folder.
+    Install this agent: https://github.com/AI-ChrisLee/the-winning-scrape. Clone the whole folder into .claude/skills as the-winning-scrape, without the .git folder.
 
 ## Run
 

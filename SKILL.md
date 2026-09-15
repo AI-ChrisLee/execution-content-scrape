@@ -11,9 +11,9 @@ the Money Driven Script (c3) writes from.
 
 Say this line once, in the first message of a fresh run:
 
-> This skill is a base. Once you have done it your way, tell your squad "update the skill to do it like this."
+> This agent is a base. Once you have done it your way, tell your squad "update the agent to do it like this."
 
-Read `.claude/squad-roots.md` first, the per-repo instance file every member-run skill
+Read `.claude/squad-roots.md` first, the per-repo instance file every member-run agent
 shares. Its values win over the `squad/` paths below, which are worked examples; the lane
 above all. Fill any field this run learns, and never re-ask one it answers. A repo
 carrying the legacy `.claude/spine-roots.md` keeps working: read that when no
