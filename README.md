@@ -4,7 +4,7 @@ This agent is a base. Once you have done it your way, tell your squad "update th
 
 It picks your next video and gives it a title and a thumbnail. It finds the newest videos in your buyer's topic that beat what their own channel usually gets, digs out the one you pick (the transcript, the thumbnail, the top 100 comments), clones 3 titles from videos that already won, and builds 3 thumbnails with your real face. You get `squad/week/<date>-package.md`.
 
-**Install.** Installed with the one line on aichrislee.com/free (products/squad/install-line.md), then quit and reopen Claude Code.
+**Install.** Installed with the one line on aichrislee.com/free, then quit and reopen Claude Code.
 
 **What it needs.**
 
