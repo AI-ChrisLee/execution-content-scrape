@@ -1,4 +1,4 @@
-# The Winning Scrape
+# execution-content-scrape
 
 This agent is a base. Once you have done it your way, tell your squad "update the agent to do it like this."
 
@@ -12,7 +12,7 @@ It picks your next video and gives it a title and a thumbnail. It finds the newe
 - 2 to 4 photos of your face in `squad/face/`. They go up to Higgsfield to make the thumbnails.
 - yt-dlp. If it is missing, the agent installs it in your folder and tells you.
 
-**Run it.** Type "Run the Winning Scrape." It reads your offer off `squad/business.md`, the page /the-winning-offer writes. The first time, it asks for 2 or 3 YouTube channels your buyers watch and 3 to 5 real messages from buyers. No `squad/business.md` yet: it also asks what you sell, in 1 line.
+**Run it.** Type "Run the Winning Scrape." It reads your offer off `squad/business.md`, the page /execution-genesis-offer writes. The first time, it asks for 2 or 3 YouTube channels your buyers watch and 3 to 5 real messages from buyers. No `squad/business.md` yet: it also asks what you sell, in 1 line.
 
 The lines you type after that:
 

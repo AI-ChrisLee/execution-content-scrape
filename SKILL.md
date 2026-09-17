@@ -1,9 +1,9 @@
 ---
-name: the-winning-scrape
-description: Use this when the founder needs this week's video picked and packaged, when they type "/the-winning-scrape" or say "Run the Winning Scrape.", then "Take the pick." (or "Take row N."), "yes" to the titles, "lock" on the review sheet, and later "Pair N won." after YouTube's A/B Testing. It finds the newest videos in the buyer's topic that beat their own channel's usual views, digs out the pick (transcript, thumbnail, top 100 comments), clones 3 titles from winning rows, builds 3 thumbnails with the founder's real face through the Higgsfield CLI, and writes squad/week/<date>-package.md. It never uploads, posts or touches YouTube.
+name: execution-content-scrape
+description: Use this when the founder needs this week's video picked and packaged, when they type "/execution-content-scrape" or say "Run the Winning Scrape.", then "Take the pick." (or "Take row N."), "yes" to the titles, "lock" on the review sheet, and later "Pair N won." after YouTube's A/B Testing. It finds the newest videos in the buyer's topic that beat their own channel's usual views, digs out the pick (transcript, thumbnail, top 100 comments), clones 3 titles from winning rows, builds 3 thumbnails with the founder's real face through the Higgsfield CLI, and writes squad/week/<date>-package.md. It never uploads, posts or touches YouTube.
 ---
 
-# The Winning Scrape
+# execution-content-scrape
 
 1 output: `squad/week/<date>-package.md`, 3 locked title and thumbnail pairs, with the winner file `squad/week/<date>-winner.md` behind it.
 
