@@ -2,7 +2,16 @@
 
 This agent is a base. Once you have done it your way, tell your squad "update the agent to do it like this."
 
-It picks your next video and gives it a title and a thumbnail. It finds the newest videos in your buyer's topic that beat what their own channel usually gets, digs out the one you pick (the transcript, the thumbnail, the top 100 comments), clones 3 titles from videos that already won, and builds 3 thumbnails with your real face. You get `squad/week/<date>-package.md`.
+Agent 7. It picks your next video and gives it a title and a thumbnail. It finds the newest videos in
+your buyer's topic that beat what their own channel usually gets, digs out the one you pick, clones 3
+titles from videos that already won, and builds 3 thumbnails with your real face. You get
+`squad/week/<date>-package.md`.
+
+**The winner file.** Behind the package sits `squad/week/<date>-winner.md`, the pick dug out whole:
+its numbers and score, the full transcript, what its thumbnail shows and how it is laid out, the top
+100 comments by likes word for word, the angle (what its audience asked for and never got), and its
+structure, section by section with times, what each part does and how long it runs. That table is
+what your script copies: their order, your substance.
 
 **Install.** Installed with the one line on aichrislee.com/free, then quit and reopen Claude Code.
 

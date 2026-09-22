@@ -1,6 +1,6 @@
 ---
 name: execution-content-scrape
-description: Use this when the founder needs this week's video picked and packaged, when they type "/execution-content-scrape" or say "Run the Winning Scrape.", then "Take the pick." (or "Take row N."), "yes" to the titles, "lock" on the review sheet, and later "Pair N won." after YouTube's A/B Testing. It finds the newest videos in the buyer's topic that beat their own channel's usual views, digs out the pick (transcript, thumbnail, top 100 comments), clones 3 titles from winning rows, builds 3 thumbnails with the founder's real face through the Higgsfield CLI, and writes squad/week/<date>-package.md. It never uploads, posts or touches YouTube.
+description: Use this when the founder needs this week's video picked and packaged, when they type "/execution-content-scrape" or say "Run the Winning Scrape.", then "Take the pick." (or "Take row N."), "yes" to the titles, "lock" on the review sheet, and later "Pair N won." after YouTube's A/B Testing. It finds the newest videos in the buyer's topic that beat their own channel's usual views, digs out the pick (transcript, thumbnail, top 100 comments, and its structure section by section with times), clones 3 titles from winning rows, builds 3 thumbnails with the founder's real face through the Higgsfield CLI, and writes squad/week/<date>-package.md. It never uploads, posts or touches YouTube.
 ---
 
 # execution-content-scrape
@@ -76,9 +76,9 @@ Nothing at 1x or over after 1 widen: "No winner yet. Nothing beat its own channe
 
 ## 4. The winner file
 
-Detail: `references/the-winner-file.md`. 1 yt-dlp pull, then `squad/week/<date>-winner.md` in 5 parts: the video and its numbers with its 1-line summary · the full transcript · the thumbnail read off the downloaded image · the top 100 comments by likes, verbatim · the angle, 2 sentences on what its audience asked for and never got.
+Detail: `references/the-winner-file.md`. 1 yt-dlp pull, then `squad/week/<date>-winner.md` in 6 parts: the video and its numbers with its 1-line summary · the full transcript · the thumbnail read off the downloaded image · the top 100 comments by likes, verbatim · the angle, 2 sentences on what its audience asked for and never got · the structure, the winner section by section off the caption times, what each part does and how long it runs, which is what the script copies.
 
-Print the path and the angle. No buyer messages: 1 line, "No buyer messages yet, so the top comments stand in.", or, with fewer than 3 viewer comments, "No buyer messages yet, and this video has almost no comments, so the angle comes from its transcript." Go straight on to 5.
+Print the path, the angle, and the structure's row count with its first 3 rows. No buyer messages: 1 line, "No buyer messages yet, so the top comments stand in.", or, with fewer than 3 viewer comments, "No buyer messages yet, and this video has almost no comments, so the angle comes from its transcript." Go straight on to 5.
 
 ## 5. The titles, and the 1 yes
 
