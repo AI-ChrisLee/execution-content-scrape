@@ -9,21 +9,13 @@ Run `higgsfield account status`. It prints the plan and the credits.
 - **Command not found:** run `npm i -g @higgsfield/cli`, then check again. It fails on permissions: run `npm i -g --prefix ~/.npm-global @higgsfield/cli`, and call `~/.npm-global/bin/higgsfield` from then on. No npm: "Install Node from nodejs.org, then say go." Wait.
 - **No `python3`:** "Install Python from python.org, then say go." Wait. On a Mac, the first `python3` can open Apple's installer for its developer tools: "Press Install, then say go." Wait.
 - **Not signed in:** run `higgsfield auth login`. It opens a sign-in page; the founder signs in with their Higgsfield account. Check again.
-- **No paid plan, or 0 credits:** the titles message goes out with no cost line and ends "Higgsfield needs a paid plan to make images from Claude Code. Say yes to save your titles; the thumbnails wait." On yes, write `titles.md` and the title-only package (`the-package.md`), and stop. The next "Run the Winning Scrape." starts at this check.
+- **No paid plan, or 0 credits:** the titles message ends "Higgsfield needs a paid plan to make images from Claude Code. Say yes to save your titles; the thumbnails wait." On yes, write `titles.md` and the title-only package (`the-package.md`), and stop. The next "Run the Winning Scrape." starts at this check.
 
 Credits through the CLI are charged at standard rates. An unlimited plan does not cover them.
 
-## The cost line
-
-    higgsfield generate cost nano_banana_2 --prompt "thumbnail" --aspect_ratio 16:9
-
-It prints the credits for 1 image without making anything. Multiply by 3. Print: "3 thumbnails cost <n> credits. You have <m>." Both numbers come off the commands, never out of this file. Nothing is uploaded or made before the founder's yes.
-
-Face photos attach to the real call, so run the cost with the same `--image` ids once they are uploaded, and when it differs, print the new number and wait for yes again.
-
 ## The face photos
 
-`squad/face/`, 2 to 4 clear photos of the founder alone, chest up, looking at the camera. Empty or missing: create the folder, and the titles message asks "Drop 2 to 4 photos of your face in squad/face/ before you say yes. A yes with no photos saves your titles and spends nothing." No photos, no thumbnails: the yes writes the title-only package. The photos go up to Higgsfield after the yes, and the titles message says so.
+`squad/face/`, 2 to 4 clear photos of the founder alone, chest up, looking at the camera. Empty or missing: create the folder, and the titles message asks "Drop 2 to 4 photos of your face in squad/face/ before you say yes. A yes with no photos saves your titles; the thumbnails wait." No photos, no thumbnails: the yes writes the title-only package. The photos go up to Higgsfield after the yes, and the titles message says so.
 
 ## The installs, first time only
 
@@ -53,7 +45,7 @@ Every compositing script runs with `.venv/bin/python`.
 
 ## The type layer, in Pillow
 
-- **Words:** 2 to 6, cloned from the source thumbnail's words the way the title was: same shape, 1 or 2 words turned. A number only with the title's receipt.
+- **Words:** 2 to 6, cloned from the source thumbnail's words the way the title was: same shape, 1 or 2 words turned.
 - **Font:** `squad/fonts/Inter.ttf`, then `font.set_variation_by_name("Black")`. Check the words render Black, not Regular.
 - **Size:** the main line 14 to 28% of the frame height (100 to 200px on a 720px frame). Under 100px fails on a phone.
 - **Sharpness:** draw on 2560x1440, then shrink to 1280x720.
@@ -68,7 +60,7 @@ Measured across 30 winning thumbnails:
 
 1. Nothing small. The largest thing that is not the face takes 30 to 55% of the frame.
 2. The face is big, 40 to 55% of the frame height, eyes on the viewer.
-3. 2 to 6 words. The number, when there is a receipt, is the headline.
+3. 2 to 6 words. The number is the headline.
 4. 1 accent color with 1 meaning.
 5. A real screen blown up big reads as proof. A painted scene reads as fake.
 
@@ -84,5 +76,5 @@ Open it: `open <path>` on macOS, `start <path>` on Windows, `xdg-open <path>` on
 
 - Change only what the founder names. A note about 1 pair never touches another.
 - Words, sizes, colors and arrows are the type layer. No credits.
-- A new base: "A new base for pair N costs <n> credits. Yes?" Wait for yes.
+- A new base is made, and its credits printed in 1 line.
 - Write the sheet again after every fix. Repeat until "lock".

@@ -8,15 +8,14 @@
 - **Titles 2 and 3:** the next highest-scoring rows whose promise this video can keep, on a title shape different from title 1.
 - **The clone:** cut the source title at its first `|`, and drop episode numbers and guests' names; a stranger's name never lands in the founder's title. Then keep every word of the source title except 1 or 2. Those turn into up to 3 of the words the buyer uses (BUYER WORDS on `squad/business.md`, the buyer messages, the searches that found rows). "He" or "she" turning to "I" does not count as a turned word.
 - **Never smarter.** The shape already won on real viewers. Improve it and the proof is gone.
-- **A receipt for every number:** a line on `squad/business.md`, or a count the pick's own transcript already holds, named next to the title with where it is said. A count the video "will show" is not a receipt, because the script keeps the pick's order and cannot add one. No receipt: turn that number into words that need none, or clone the next row.
 - **The video keeps the promise.** A title whose promise the pick's transcript does not hold goes to the next row, because the script changes only the example, the claims and the endings.
 - **The founder's swapped word wins** over the shape.
 
-Print them as a table, in the message that carries the cost line:
+Print them as a table, in the titles message:
 
-    | # | Title | Cloned from | Score | Words turned | Receipt |
-    |---|---|---|---|---|---|
-    | 1 | <title> | [<source title>](<link>) | <n> | "<old>" to "<new>" | <receipt, or no number> |
+    | # | Title | Cloned from | Score | Words turned |
+    |---|---|---|---|---|
+    | 1 | <title> | [<source title>](<link>) | <n> | "<old>" to "<new>" |
 
 On yes, write the same table into `squad/week/thumbs/<date>/titles.md`, under `# Titles · <date> · yes`.
 
@@ -29,11 +28,11 @@ On "lock", write `squad/week/<date>-package.md`. The first 2 lines are the join 
 
     # Package · <date> · locked
 
-    | Pair | Title | Thumbnail | Cloned from | Words turned | Receipt |
-    |---|---|---|---|---|---|
-    | 1 (main) | <title> | squad/week/thumbs/<date>/pair-1.jpg | [<source title>](<link>) · score <n> | "<old>" to "<new>" | <receipt, or no number> |
-    | 2 | <title> | squad/week/thumbs/<date>/pair-2.jpg | ... | ... | ... |
-    | 3 | <title> | squad/week/thumbs/<date>/pair-3.jpg | ... | ... | ... |
+    | Pair | Title | Thumbnail | Cloned from | Words turned |
+    |---|---|---|---|---|
+    | 1 (main) | <title> | squad/week/thumbs/<date>/pair-1.jpg | [<source title>](<link>) · score <n> | "<old>" to "<new>" |
+    | 2 | <title> | squad/week/thumbs/<date>/pair-2.jpg | ... | ... |
+    | 3 | <title> | squad/week/thumbs/<date>/pair-3.jpg | ... | ... |
 
     A/B test: Upload with pair 1. Once the video is public, open it in YouTube Studio on a computer and press A/B Testing. Add all 3 pairs, title and thumbnail together. YouTube keeps the pair people watch longest and tells you in a few days to 2 weeks. Then type "Pair N won." No A/B Testing button (it needs the channel's advanced features, and a public long video): keep pair 1.
 

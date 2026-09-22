@@ -19,7 +19,7 @@ Open the 4 files in `references/` first: `the-hunt.md`, `the-winner-file.md`, `t
 |---|---|
 | "Run the Winning Scrape." | the table below picks the step |
 | "Take the pick." or "Take row N." | 4, then 5 |
-| any swapped title word, then "yes" | 5.5, then 6 (no face photos or no paid plan: 5.5, then stop) |
+| any swapped title word, then "yes" | 5.4, then 6 (no face photos or no paid plan: 5.4, then stop) |
 | a fix, or "lock" | 7, then 8 on lock |
 | "Pair N won." | 9, then stop |
 
@@ -34,7 +34,7 @@ Read the newest week folder `squad/week/thumbs/<date>/`. Files decide, never wha
 | a week folder with no `src/rows.md` | 1, in that folder |
 | `src/rows.md`, no `squad/week/<date>-winner.md` | 3, the table and the stop again |
 | the winner file, no `titles.md` | 5 |
-| `titles.md`, a `pair-N-base.png` missing | 5.2 and 5.3 (the check, the cost line), then 6 on yes, only the missing bases |
+| `titles.md`, a `pair-N-base.png` missing | 5.2 (the check), then 6, only the missing bases |
 | all 3 bases, a `pair-N.jpg` missing | 6, the type layer only |
 | all 3 `pair-N.jpg`, no package file | 7 |
 
@@ -43,7 +43,6 @@ Read the newest week folder `squad/week/thumbs/<date>/`. Files decide, never wha
 - Never uploads, posts, publishes or schedules. Never touches YouTube.
 - Never invents a row, a number, a quote, a comment or a thumbnail read. A row without a link does not exist. A search snippet is not a number.
 - Never generates a face, a screen, a number or a word inside an image. Faces come only from `squad/face/`. Words are composited in code.
-- Never spends a Higgsfield credit before the cost line and the founder's yes.
 - Never forces a pick. A forced pick is worse than an honest miss.
 
 ## 1. Read
@@ -83,13 +82,12 @@ Print the path and the angle. No buyer messages: 1 line, "No buyer messages yet,
 
 ## 5. The titles, and the 1 yes
 
-Detail: `references/the-package.md` (titles) and `references/the-thumbnails.md` (the check and the cost).
+Detail: `references/the-package.md` (titles) and `references/the-thumbnails.md` (the check).
 
-1. 3 titles, each cloned from a verified row in `rows.md`: keep the shape, turn 1 or 2 of its words into up to 3 of the buyer's words. The main clones the pick. From week 2, when `squad/lane.md` has a row under `## Your own winners`, the newest one's shape takes the main and the pick moves to title 2. Every title links its source. Every number carries its receipt, a line on `squad/business.md` or a count the pick's transcript already holds, or it goes.
-2. Run `higgsfield account status` and `python3 --version`. Higgsfield not installed, no Node, no Python, or not signed in: the fix in `the-thumbnails.md`, then run them again. No paid plan, or 0 credits: send the titles message with no cost line, ending "Higgsfield needs a paid plan to make images from Claude Code. Say yes to save your titles; the thumbnails wait." On yes, 5.5.
-3. `higgsfield generate cost` for 1 base, times 3.
-4. 1 message: the 3 titles with source, words turned and receipt · "3 thumbnails cost <n> credits. You have <m>." · "Your face photos go up to Higgsfield to make them." · `squad/face/` empty: "Drop 2 to 4 photos of your face in squad/face/ before you say yes. A yes with no photos saves your titles and spends nothing." · first time here: "Your first yes with photos also installs Pillow and the Inter font in this folder." · photos in `squad/face/`: "Swap any word that isn't yours, then say yes. That 1 yes saves your titles and spends the credits." · `squad/face/` empty: "Swap any word that isn't yours, then say yes."
-5. On yes: the founder's words win over the shape. Write `squad/week/thumbs/<date>/titles.md`. `squad/face/` still empty, or no paid plan (5.2): spend nothing, write the title-only package (`references/the-package.md`), create the episode folder, and print: "Your titles are saved. The script can start now: Write the money script. The thumbnails wait for your face photos in squad/face/ and a paid Higgsfield plan. Then say: Run the Winning Scrape." Stop.
+1. 3 titles, each cloned from a verified row in `rows.md`: keep the shape, turn 1 or 2 of its words into up to 3 of the buyer's words. The main clones the pick. From week 2, when `squad/lane.md` has a row under `## Your own winners`, the newest one's shape takes the main and the pick moves to title 2. Every title links its source.
+2. Run `higgsfield account status` and `python3 --version`. Higgsfield not installed, no Node, no Python, or not signed in: the fix in `the-thumbnails.md`, then run them again. No paid plan, or 0 credits: send the titles message ending "Higgsfield needs a paid plan to make images from Claude Code. Say yes to save your titles; the thumbnails wait." On yes, 5.4.
+3. 1 message: the 3 titles with source and words turned · "Your face photos go up to Higgsfield to make them." · `squad/face/` empty: "Drop 2 to 4 photos of your face in squad/face/ before you say yes. A yes with no photos saves your titles; the thumbnails wait." · first time here: "Your first yes with photos also installs Pillow and the Inter font in this folder." · "Swap any word that isn't yours, then say yes. That 1 yes saves your titles."
+4. On yes: the founder's words win over the shape. Write `squad/week/thumbs/<date>/titles.md`. `squad/face/` still empty, or no paid plan (5.2): write the title-only package (`references/the-package.md`), create the episode folder, and print: "Your titles are saved. The script can start now: Write the money script. The thumbnails wait for your face photos in squad/face/ and a paid Higgsfield plan. Then say: Run the Winning Scrape." Stop.
 
 ## 6. The thumbnails
 
@@ -106,7 +104,7 @@ Detail: `references/the-thumbnails.md`.
 
 1. Write `squad/week/thumbs/<date>/review-sheet.html`: each pair at 320px wide with its title, the source thumbnail beside it. Read it at that size first, fix what is weak. Open it for the founder.
 2. "Tell me what's wrong, or say lock."
-3. A fix changes only what the founder names. A new base prints its credits in 1 line and waits for yes.
+3. A fix changes only what the founder names. A new base is made, and its credits printed in 1 line.
 4. Repeat until "lock".
 
 ## 8. The package file

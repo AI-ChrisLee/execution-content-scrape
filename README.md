@@ -8,7 +8,7 @@ It picks your next video and gives it a title and a thumbnail. It finds the newe
 
 **What it needs.**
 
-- A paid Higgsfield plan, for the thumbnails. If the Higgsfield command line tool is missing, the agent installs it and you sign in once. If your laptop needs Node or Python first, it names the 1 thing to install and waits. It prints the credits before it makes anything, and waits for your yes.
+- A paid Higgsfield plan, for the thumbnails. If the Higgsfield command line tool is missing, the agent installs it and you sign in once. If your laptop needs Node or Python first, it names the 1 thing to install and waits. It prints the credits it used.
 - 2 to 4 photos of your face in `squad/face/`. They go up to Higgsfield to make the thumbnails.
 - yt-dlp. If it is missing, the agent installs it in your folder and tells you.
 
@@ -17,7 +17,7 @@ It picks your next video and gives it a title and a thumbnail. It finds the newe
 The lines you type after that:
 
 - "Take the pick." (or "Take row 3.")
-- Swap any title word that isn't yours, then "yes". That 1 yes saves your titles and spends the credits.
+- Swap any title word that isn't yours, then "yes". That 1 yes saves your titles.
 - Say what's wrong on the review sheet, then "lock".
 - When YouTube's A/B Testing has picked: "Pair 2 won."
 
